@@ -1,0 +1,17 @@
+*-backups/
+*.bak
+fp-info-cache
+ignored/
+CNC/
+Gerbers*
+*.FlatPrj
+~*
+production/
+*.zip
+sdpsensor_kicad.csv
+sdpsensor_kicad.xml
+.~*
+.idea/
+*.csv
+_autosave*
+*.json
