@@ -66,14 +66,6 @@
         [
           "copper_edge_clearance|90050000|70600000|87acf702-d26a-49fc-bd54-f5da75756672|124a8648-79e2-47ec-aaac-6bb9fd9c6167",
           ""
-        ],
-        [
-          "copper_edge_clearance|91550000|40150000|87acf702-d26a-49fc-bd54-f5da75756672|f5e777c4-6fe5-4e11-b47f-1fc67493652e",
-          ""
-        ],
-        [
-          "copper_edge_clearance|97150000|40150000|87acf702-d26a-49fc-bd54-f5da75756672|817871fb-e9a6-4da0-b8d7-95a029e01358",
-          ""
         ]
       ],
       "meta": {
@@ -157,7 +149,7 @@
         "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -601,21 +593,9 @@
         },
         {
           "group_by": false,
-          "label": "Description_1",
-          "name": "Description_1",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "LCSC",
           "name": "LCSC",
           "show": true
-        },
-        {
-          "group_by": false,
-          "label": "MAXIMUM_PACKAGE_HEIGHT",
-          "name": "MAXIMUM_PACKAGE_HEIGHT",
-          "show": false
         },
         {
           "group_by": false,
