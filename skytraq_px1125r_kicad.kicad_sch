@@ -1904,23 +1904,25 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -0.762 -11.684 0)
+			(property "Reference" "U5"
+				(at -0.254 -12.446 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" ""
-				(at 0 0 0)
+			(property "Value" "SkyTraq_PX1105"
+				(at 2.1433 -26.67 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" "MySkyTraqFootprints:skytraq_px1105"
+			(property "Footprint" "MyFootprints:skytraq_px1105"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3933,12 +3935,6 @@
 		(uuid "5000aada-a4a0-4297-a624-86cf8941993a")
 	)
 	(junction
-		(at 241.935 26.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6493640f-e5c6-4901-8645-83120259189e")
-	)
-	(junction
 		(at 252.095 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4132,6 +4128,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.557 27.178) (xy 138.557 27.305)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06dcdd1c-cb33-4f42-824d-9ec562eac3a5")
+	)
+	(wire
+		(pts
 			(xy 111.125 43.815) (xy 123.19 43.815)
 		)
 		(stroke
@@ -4192,7 +4198,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 26.67) (xy 236.22 38.1)
+			(xy 236.22 35.306) (xy 236.22 38.1)
 		)
 		(stroke
 			(width 0)
@@ -4502,6 +4508,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.557 27.305) (xy 138.43 27.305)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6efd6470-7718-4d9f-8ed7-24f519ab4c24")
+	)
+	(wire
+		(pts
 			(xy 30.48 36.83) (xy 30.48 41.91)
 		)
 		(stroke
@@ -4712,7 +4728,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 26.67) (xy 241.935 26.67)
+			(xy 236.22 35.306) (xy 240.284 35.306)
 		)
 		(stroke
 			(width 0)
@@ -4829,16 +4845,6 @@
 			(type default)
 		)
 		(uuid "b209b963-0c28-4fe7-b793-05b9759c4aaf")
-	)
-	(wire
-		(pts
-			(xy 241.935 26.67) (xy 250.19 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b28ff6ec-5192-4120-921a-a328c2192923")
 	)
 	(wire
 		(pts
@@ -5122,7 +5128,7 @@
 	)
 	(wire
 		(pts
-			(xy 150.495 27.305) (xy 138.43 27.305)
+			(xy 150.622 27.178) (xy 138.557 27.178)
 		)
 		(stroke
 			(width 0)
@@ -5291,7 +5297,7 @@
 		(uuid "36d28f59-6e0c-4c62-bca7-7c3472bc36b6")
 	)
 	(label "VBAT"
-		(at 250.19 26.67 180)
+		(at 240.284 35.306 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5431,7 +5437,7 @@
 		(uuid "b8d9dea7-890b-46a5-bd8c-37e0de498dcd")
 	)
 	(label "GPS_V_BCKP"
-		(at 150.495 27.305 180)
+		(at 150.622 27.178 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7731,10 +7737,9 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp yes)
-		(fields_autoplaced yes)
 		(uuid "477acce5-b425-4b37-9996-105652343ab0")
 		(property "Reference" "R7"
-			(at 153.035 26.67 90)
+			(at 147.828 31.242 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7742,7 +7747,7 @@
 			)
 		)
 		(property "Value" "10"
-			(at 153.035 29.21 90)
+			(at 152.908 32.512 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8422,72 +8427,6 @@
 			(project "skytraq_px1125r_kicad"
 				(path "/f8f1d4cf-0f7a-4055-9a9d-a328f34ee721"
 					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 241.935 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "67725a35-d838-4c59-add5-acc25c9ef47d")
-		(property "Reference" "#PWR04"
-			(at 241.935 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 241.935 38.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 241.935 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 241.935 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 241.935 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "31461ca6-3b14-40b5-9475-099a677d379f")
-		)
-		(instances
-			(project "skytraq_px1125r_kicad"
-				(path "/f8f1d4cf-0f7a-4055-9a9d-a328f34ee721"
-					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -9204,7 +9143,7 @@
 		(at 136.525 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "8908ba44-45e0-45fb-95ee-d51a277d1eef")
@@ -9217,7 +9156,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "SkyTraq_PX1105"
 			(at 138.6683 142.24 0)
 			(effects
 				(font
@@ -10094,6 +10033,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 158.242 27.178 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a603dd68-0606-4f1e-ac23-811d6ab38212")
+		(property "Reference" "#PWR04"
+			(at 158.242 33.528 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 158.242 31.623 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.242 27.178 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.242 27.178 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 158.242 27.178 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e63093c4-ea03-499f-ae14-1e9f94a47bc6")
+		)
+		(instances
+			(project "skytraq_px1125r_kicad"
+				(path "/f8f1d4cf-0f7a-4055-9a9d-a328f34ee721"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 98.425 38.1 0)
 		(unit 1)
@@ -10635,93 +10639,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 241.935 30.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b728ef96-cff2-41a7-85b5-ab7e0d8461b7")
-		(property "Reference" "C3"
-			(at 245.11 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 245.11 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 242.9002 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 241.935 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 241.935 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C1525"
-			(at 241.935 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" "Low ESR! X7R"
-			(at 241.935 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "052ab9dd-9d80-4fd3-a44a-b7f351e6bbc9")
-		)
-		(pin "2"
-			(uuid "5943fc6a-6276-41ec-851c-0b08a12ecbc0")
-		)
-		(instances
-			(project "skytraq_px1125r_kicad"
-				(path "/f8f1d4cf-0f7a-4055-9a9d-a328f34ee721"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 172.085 69.85 0)
 		(unit 1)
@@ -11081,6 +10998,93 @@
 			(project "skytraq_px1125r_kicad"
 				(path "/f8f1d4cf-0f7a-4055-9a9d-a328f34ee721"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 154.432 27.178 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cfb511e3-9f59-4a1e-8d56-ee1e9f7b5666")
+		(property "Reference" "C3"
+			(at 153.162 24.003 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 155.702 24.003 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 158.242 26.2128 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.432 27.178 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 154.432 27.178 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19702"
+			(at 154.432 27.178 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "Low ESR! X7R"
+			(at 154.432 27.178 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5c281a6d-494e-4608-8291-8ff55fcb0dac")
+		)
+		(pin "2"
+			(uuid "e58c6abd-9bf1-4f4d-a348-7fa0bb2ae192")
+		)
+		(instances
+			(project "skytraq_px1125r_kicad"
+				(path "/f8f1d4cf-0f7a-4055-9a9d-a328f34ee721"
+					(reference "C3")
 					(unit 1)
 				)
 			)
