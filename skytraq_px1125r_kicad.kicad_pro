@@ -486,7 +486,8 @@
   "libraries": {
     "pinned_footprint_libs": [
       "MyFootprints",
-      "footprint_JLCPCB"
+      "footprint",
+      "footprint"
     ],
     "pinned_symbol_libs": [
       "MySymbols",

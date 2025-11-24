@@ -5470,6 +5470,16 @@
 		)
 		(uuid "ed053d41-8da1-4f0f-8d35-fc0c1e617b0b")
 	)
+	(label "GPS_RX2"
+		(at 271.78 131.826 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fb435051-8677-4344-a40e-a7ae41cf38ed")
+	)
 	(global_label "GPS_RST"
 		(shape input)
 		(at 74.93 142.24 180)
@@ -5492,7 +5502,7 @@
 			)
 		)
 	)
-	(global_label "BOOT{slash}GPS_RXD2"
+	(global_label "BOOT{slash}GPS_RX2"
 		(shape input)
 		(at 49.53 107.95 180)
 		(fields_autoplaced yes)
@@ -5504,7 +5514,7 @@
 		)
 		(uuid "0756b029-2890-4baa-af88-4aaea0bb1f7a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 30.6396 107.95 0)
+			(at 31.9096 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5646,7 +5656,7 @@
 			)
 		)
 	)
-	(global_label "BOOT{slash}GPS_RXD2"
+	(global_label "BOOT{slash}GPS_RX2"
 		(shape input)
 		(at 107.315 55.88 180)
 		(fields_autoplaced yes)
@@ -5658,7 +5668,7 @@
 		)
 		(uuid "2ad126d1-2480-4ae4-bfbb-75856c6625d7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.4246 55.88 0)
+			(at 89.6946 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5822,7 +5832,7 @@
 			)
 		)
 	)
-	(global_label "BOOT{slash}GPS_RXD2"
+	(global_label "BOOT{slash}GPS_RX2"
 		(shape input)
 		(at 74.93 134.62 180)
 		(fields_autoplaced yes)
@@ -5834,7 +5844,7 @@
 		)
 		(uuid "ab0c9574-09b4-40da-aeb9-7d9fa6e507e8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 56.0396 134.62 0)
+			(at 57.3096 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6399,7 +6409,7 @@
 		(at 141.605 106.045 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "0a8eaabb-c152-4419-b19b-9d2d8970202d")
@@ -6421,7 +6431,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 142.5702 109.855 0)
 			(effects
 				(font
@@ -6440,24 +6450,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 141.605 106.045 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C1525"
-			(at 141.605 106.045 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" "Low ESR! X7R"
 			(at 141.605 106.045 0)
 			(effects
 				(font
@@ -6542,6 +6534,85 @@
 			(project "skytraq_px1125r_kicad"
 				(path "/f8f1d4cf-0f7a-4055-9a9d-a328f34ee721"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 271.78 128.016 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0b90d0bd-f1ee-4072-bc9e-ebe94870221b")
+		(property "Reference" "D3"
+			(at 274.955 128.3335 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "GREEN"
+			(at 274.955 130.8735 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 271.78 128.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 271.78 128.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 271.78 128.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C916074"
+			(at 271.78 128.016 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4eb94df3-139c-4231-8991-c8661d16a65d")
+		)
+		(pin "1"
+			(uuid "5b353941-56c8-4b68-90ac-067e99fa774c")
+		)
+		(instances
+			(project "skytraq_px1125r_kicad"
+				(path "/f8f1d4cf-0f7a-4055-9a9d-a328f34ee721"
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -6882,6 +6953,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 271.78 120.396 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1dafd5dd-16c3-4890-9b83-3cfc8f6c80fe")
+		(property "Reference" "R13"
+			(at 273.685 119.126 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 273.685 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 270.002 120.396 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 271.78 120.396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 271.78 120.396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 271.78 120.396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d16cd7c3-8273-4f53-b032-ece9cadf5c04")
+		)
+		(pin "1"
+			(uuid "12e1ae4b-7c0e-4696-aec3-6ee208697a38")
+		)
+		(instances
+			(project "skytraq_px1125r_kicad"
+				(path "/f8f1d4cf-0f7a-4055-9a9d-a328f34ee721"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_Coaxial")
 		(at 184.785 48.26 0)
 		(unit 1)
@@ -6909,7 +7059,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footprint_JLCPCB:SMA-SMD_BWSMA-KE-P001_Symmetric"
+		(property "Footprint" "footprint:SMA-SMD_BWSMA-KE-P001_Symmetric"
 			(at 184.785 48.26 0)
 			(effects
 				(font
@@ -8081,6 +8231,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 201.93 154.432 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "629fbf63-458f-4814-80e8-d1148d7a8714")
+		(property "Reference" "H3"
+			(at 204.47 153.1619 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 204.47 155.7019 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 201.93 154.432 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 201.93 154.432 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 201.93 154.432 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "skytraq_px1125r_kicad"
+				(path "/f8f1d4cf-0f7a-4055-9a9d-a328f34ee721"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 172.085 86.36 0)
 		(unit 1)
@@ -8837,6 +9051,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 201.93 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e304780-5fb0-4687-951f-03aa0cfbea1d")
+		(property "Reference" "H2"
+			(at 204.47 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 204.47 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 201.93 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 201.93 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 201.93 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/f8f1d4cf-0f7a-4055-9a9d-a328f34ee721"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic_MountingPin:Conn_01x06_MountingPin")
 		(at 45.72 137.795 0)
 		(unit 1)
@@ -9428,7 +9706,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footprint_JLCPCB:LGA-12_L2.0-W2.0-P0.50-BL"
+		(property "Footprint" "footprint:LGA-12_L2.0-W2.0-P0.50-BL"
 			(at 77.47 54.61 0)
 			(effects
 				(font
@@ -10809,6 +11087,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 271.78 116.586 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d0522997-fa89-4338-9a72-983187d74393")
+		(property "Reference" "#PWR029"
+			(at 271.78 120.396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 271.78 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 116.586 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 271.78 116.586 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 271.78 116.586 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "504ce263-d918-419f-9abc-e5ef28546d4a")
+		)
+		(instances
+			(project "skytraq_px1125r_kicad"
+				(path "/f8f1d4cf-0f7a-4055-9a9d-a328f34ee721"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 22.86 63.5 0)
 		(unit 1)
@@ -10956,7 +11299,7 @@
 		(at 123.825 106.045 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "d4824c97-a9e5-42f6-b0f0-d6d2184241cb")
@@ -10978,7 +11321,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 124.7902 109.855 0)
 			(effects
 				(font
@@ -10997,24 +11340,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 123.825 106.045 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C19702"
-			(at 123.825 106.045 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" "Low ESR! X7R"
 			(at 123.825 106.045 0)
 			(effects
 				(font
@@ -11502,6 +11827,70 @@
 			(project "skytraq_px1125r_kicad"
 				(path "/f8f1d4cf-0f7a-4055-9a9d-a328f34ee721"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 201.93 160.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f5b52b6c-586d-4646-92bc-2500f95cf52b")
+		(property "Reference" "H4"
+			(at 204.47 158.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 204.47 161.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 201.93 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 201.93 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 201.93 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "skytraq_px1125r_kicad"
+				(path "/f8f1d4cf-0f7a-4055-9a9d-a328f34ee721"
+					(reference "H4")
 					(unit 1)
 				)
 			)
