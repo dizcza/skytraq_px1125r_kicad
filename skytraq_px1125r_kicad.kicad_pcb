@@ -13663,6 +13663,18 @@
 			)
 		)
 	)
+	(gr_poly
+		(pts
+			(xy 112.45 54.1) (xy 114.5 52.1) (xy 116.6 54.1) (xy 115.85 54.1) (xy 114.5 52.85) (xy 113.2 54.1)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "910515a2-1d96-433f-85bc-43cbd7ca596c")
+	)
 	(gr_rect
 		(start 90 40)
 		(end 126 76)
